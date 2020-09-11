@@ -19,7 +19,7 @@ public class OrdemCrescente
 		System.out.println("Digite N3: ");
 		n3=kb.nextInt();
 
-		if (n1>n2 && n2>n3)
+		if (n1>n2 && n1>n3)
 		{
 			System.out.printf("%d..%d..%d ",n3,n2,n1);
 		}
@@ -31,6 +31,8 @@ public class OrdemCrescente
 		{
 			System.out.printf("%d..%d..%d ",n3,n1,n2);
 		}
+	
+		kb.close();
 	}
 
 }

@@ -26,7 +26,7 @@ public class ParOuImpar
 			}
 			else  
 			{
-				System.out.printf("numero impar e seu exponencial ao quadrado é igual a :"+numero*numero++);
+				System.out.printf("numero impar e seu exponencial ao quadrado é igual a :"+Math.pow(numero, 2));
 			}
 
 		kb.close();	
