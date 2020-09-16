@@ -3,45 +3,59 @@ package vetoresMatrizes;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Exercicio02 
-{
+public class Exercicio02 {
+
 	public static void main(String[] args) 
 	{
-		//3- Leia uma matriz 3 x 3, conte e escreva quantos valores maiores que 10 ela possui.
-
-		 Random gerador = new Random ();		
-		 int matriz[][] = new int [3][3];
-				
-			final int LINHA=3;
-			final int COLUNA=3; //linha e colunas constantes
-				
-			int linha,coluna, valorDigitado = 0; 
-			int cont10=0;
-				
-			for(linha=0; linha<LINHA; linha++)
+		
+	  /*2- Faça um programa que receba 6 números inteiros e mostre: 
+		• Os números pares digitados; 			 ooooooooooooooookkkkkkkkk
+		• A soma dos números pares digitados; 
+		• Os números ímpares digitados; 		ooooooooooooooooookkkkkkkk
+		• A quantidade de números ímpares digitados.  */
+		 
+		final int LIMITE=06;
+		int []vetorA = new int[LIMITE];
+		int []vetorB = new int [LIMITE];
+		int somaPares=0,contImpares=0;
+		
+		Random sorteio = new Random();
+		
+		System.out.println("valores sorteados");
+		for(int i=0;i<vetorA.length;i++)
+		{
+			vetorA[i]=sorteio.nextInt(20)+1;
+			System.out.print(vetorA[i]+" ");
+			vetorB[i]=vetorA[i];
+		}
+			System.out.println("\n");
+			System.out.print("Valores Pares ");
+			
+			for(int i=0;i<vetorA.length;i++)
 			{
-				System.out.printf(" | ");
-					
-				for (coluna=0; coluna<COLUNA; coluna++)
+				if(vetorB[i] % 2 == 0)
 				{
-						valorDigitado = gerador.nextInt(20)+1;
-						matriz[linha][coluna] = valorDigitado;
-						
-					// escreva("Matriz [",l,"][",c,"] :", matriz[l][c])
-					
-						System.out.print(matriz[linha][coluna]);
-						System.out.print(" | ");
-						
-							if (valorDigitado > 10)
-							{
-								cont10=cont10+1; //cont++
-							}
-						
+					somaPares=somaPares+vetorB[i];
+					System.out.print(vetorB[i]+" ");
 				}
-					System.out.print("\n\n");
+				
 			}
 			
-					System.out.print("quantidade de numeros maiores que 10 na Matriz igual a: "+cont10);
-	}	
+			System.out.println();
+			System.out.print("Valores ímpares ");
+			for(int i=0;i<vetorA.length;i++)
+			{
+				if(vetorB[i] % 2 != 0)
+				{
+					contImpares=contImpares+1;
+					System.out.print(vetorB[i]+" ");
+				}
+				
+			}
+			
+			System.out.println("\nA soma dos numeros pares é igual a: "+somaPares);
+			System.out.println("A quantidade de numeros impares digitados é igual a: "+contImpares);
+			
+	}
+
 }
-	
