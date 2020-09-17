@@ -18,7 +18,6 @@ public class Exercicio03 {
         Scanner kb = new Scanner(System.in);
         ProdutoEletronico produto1 = new ProdutoEletronico();
 
-
         System.out.println("Digite o tipo de aparelho eletrônico: ");
         produto1.tipo= kb.next();
         System.out.println("Digite a marca do aparelho eletrônico: ");
@@ -27,6 +26,7 @@ public class Exercicio03 {
         produto1.modelo= kb.next();
 
         //método
+        
         produto1.mostraTipo();
         produto1.mostraMarca();
         produto1.mostraModelo();

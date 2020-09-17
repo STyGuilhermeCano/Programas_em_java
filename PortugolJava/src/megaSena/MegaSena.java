@@ -1,14 +1,14 @@
 package megaSena;
 
 import java.util.Arrays;
-import java.util.List;
+
 import java.util.Random;
 
 public class MegaSena {
 	public static void main(String[] args) {
 		System.out.println(" --- M E G A S E N A ---\n");
 		
-		final int LIMITE=06;
+		final int LIMITE=14;
 		int[] megaSena = new int[LIMITE];
 		Random sorteio = new Random();
 	

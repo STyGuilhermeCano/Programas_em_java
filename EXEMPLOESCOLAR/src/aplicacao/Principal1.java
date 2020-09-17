@@ -4,11 +4,10 @@ import java.util.Scanner;
 
 import entidades.Aluno;
 
-public class Principal {
+public class Principal1 {
 
 	public static void main(String[] args) {
-		
-	Scanner kb = new Scanner(System.in);
+		Scanner kb = new Scanner(System.in);
 		Aluno aluno1 = new Aluno();
 		double mediaEscola;
 		
@@ -38,9 +37,7 @@ public class Principal {
 		
 		aluno1.mostraMedia();
 		
-		
-		
-	kb.close();
+
 	}
 
 }
