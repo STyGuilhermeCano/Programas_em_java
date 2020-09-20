@@ -6,14 +6,12 @@ public class Cachorro extends Animal{
 		super(nome, idade);	
 	}
 
-	public void  mostraSom() {
-		System.out.println("o cachorro esta latindo");
-	}
+		public void  mostraSom() {
+			System.out.println("o cachorro esta latindo");
+		}
 	
-	public void mostraacao() {
-		System.out.println("o cachorro esta correndo");
-	}
-	
-	
+		public void mostraacao() {
+			System.out.println("o cachorro esta correndo");
+		}
 	
 }

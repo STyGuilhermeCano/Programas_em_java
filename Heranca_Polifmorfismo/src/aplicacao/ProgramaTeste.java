@@ -1,9 +1,6 @@
 package aplicacao;
 
-import java.util.ArrayList;
-import java.util.List;
 
-import entidades.Animal;
 import entidades.Cachorro;
 import entidades.Cavalo;
 import entidades.Preguiça;
@@ -18,22 +15,18 @@ public class ProgramaTeste {
 		
 		System.out.println("AÇÂO DOS BICHOS\n");
 	
-		
-				cachorro.mostraSom();
-				cachorro.mostraacao();
+			cachorro.mostraSom();
+			cachorro.mostraacao();
 				
-				System.out.println();
+			System.out.println();
 				
-				cavalo.mostraSom();
-				cavalo.mostraacao();
+			cavalo.mostraSom();
+			cavalo.mostraacao();
 				
-				System.out.println();
+			System.out.println();
 				
-				preguiça.mostraSom();
-				preguiça.mostraacao();
-				
-			
-				
-				
+			preguiça.mostraSom();
+			preguiça.mostraacao();
+							
 	}
 }
